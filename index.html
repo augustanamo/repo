@@ -318,6 +318,18 @@
         .gallery-container {
           clip-path: polygon(100% 0%, 21% 0%, 66% 50%, 485% 510%);
         }
+
+        @keyframes floatTitle {
+          0%,
+          100% {
+            transform: rotateX(37deg) rotateY(51deg) rotateZ(4deg)
+              translateX(266px) translateY(-53px) translateZ(0px);
+          }
+          50% {
+            transform: rotateX(37deg) rotateY(51deg) rotateZ(4deg)
+              translateX(266px) translateY(-53px) translateZ(30px);
+          }
+        }
         .main-gallery {
           transform: translateY(-432px) rotate(31deg);
           width: 800px;
@@ -346,54 +358,54 @@
           transform: scale(0.8);
         }
         .event-card:nth-child(6) {
-          left: 556px;
-          top: 99px;
+          left: 555px;
+          top: 105px;
           transform: translateZ(100px) scale(0.8);
         }
         .event-card:nth-child(7) {
-          left: 476px;
-          top: 218px;
+          left: 463px;
+          top: 228px;
           transform: translateZ(100px) scale(0.8);
         }
         .event-card:nth-child(8) {
-          left: 396px;
-          top: 337px;
+          left: 370px;
+          top: 349px;
           transform: translateZ(100px) scale(0.8);
         }
         .event-card:nth-child(9) {
-          left: 316px;
-          top: 457px;
+          left: 276px;
+          top: 471px;
           transform: translateZ(100px) scale(0.8);
         }
         .event-card:nth-child(10) {
-          left: 237px;
-          top: 576px;
+          left: 184px;
+          top: 592px;
           transform: translateZ(100px) scale(0.8);
         }
         .event-card:nth-child(11) {
-          left: 267px;
-          top: 649px;
-          transform: translateZ(100px) scale(0.8);
+          left: 209px;
+          top: 663px;
+          transform: translateZ(180px) scale(0.8);
         }
         .event-card:nth-child(12) {
-          left: 399px;
-          top: 659px;
-          transform: translateZ(100px) scale(0.8);
+          left: 350px;
+          top: 674px;
+          transform: translateZ(180px) scale(0.8);
         }
         .event-card:nth-child(13) {
-          left: 533px;
-          top: 670px;
-          transform: translateZ(100px) scale(0.8);
+          left: 494px;
+          top: 685px;
+          transform: translateZ(180px) scale(0.8);
         }
         .event-card:nth-child(14) {
-          left: 666px;
-          top: 680px;
-          transform: translateZ(100px) scale(0.8);
+          left: 637px;
+          top: 696px;
+          transform: translateZ(180px) scale(0.8);
         }
         .event-card:nth-child(15) {
-          left: 799px;
-          top: 690px;
-          transform: translateZ(100px) scale(0.8);
+          left: 780px;
+          top: 707px;
+          transform: translateZ(180px) scale(0.8);
         }
         .title {
           font-size: 4rem;
@@ -402,8 +414,8 @@
         }
         .quote {
           font-size: 1.2rem;
-          right: 24%;
-          bottom: -63%;
+          right: 21%;
+          bottom: -44%;
         }
       }
       /* Pad端 */
@@ -411,6 +423,17 @@
         .main-gallery {
           transform: translateX(-112px) translateY(-432px) rotate(31deg);
           width: 600px;
+        }
+        @keyframes floatTitle {
+          0%,
+          100% {
+            transform: rotateX(37deg) rotateY(61deg) rotateZ(4deg)
+              translateX(266px) translateY(-53px) translateZ(0px);
+          }
+          50% {
+            transform: rotateX(37deg) rotateY(61deg) rotateZ(4deg)
+              translateX(266px) translateY(-53px) translateZ(30px);
+          }
         }
         .gallery-container {
           clip-path: polygon(100% 0%, 22% 0%, 77% 51%, 585% 510%);
@@ -494,20 +517,20 @@
         .quote {
           font-size: 1.2rem;
         }
-        @keyframes floatTitle {
-          0%,
-          100% {
-            transform: rotateX(43deg) rotateY(42deg) rotateZ(4deg)
-              translateX(197px) translateY(-53px) translateZ(0px);
-          }
-          50% {
-            transform: rotateX(43deg) rotateY(42deg) rotateZ(4deg)
-              translateX(197px) translateY(-53px) translateZ(20px);
-          }
-        }
       }
       /* 移动端 */
       @media (max-width: 768px) {
+        @keyframes floatTitle {
+          0%,
+          100% {
+            transform: rotateX(36deg) rotateY(70deg) rotateZ(3deg)
+              translateX(181px) translateY(-17px) translateZ(0px);
+          }
+          50% {
+            transform: rotateX(36deg) rotateY(70deg) rotateZ(3deg)
+              translateX(181px) translateY(-17px) translateZ(20px);
+          }
+        }
         .event-card {
           width: 100px;
           height: 200px;
@@ -535,6 +558,17 @@
           width: 300px;
           transform: translateX(-112px) translateY(-560px) rotate(31deg);
         }
+        @keyframes floatTitle {
+          0%,
+          100% {
+            transform: rotateX(36deg) rotateY(42deg) rotateZ(3deg)
+              translateX(181px) translateY(-17px) translateZ(0px);
+          }
+          50% {
+            transform: rotateX(36deg) rotateY(42deg) rotateZ(3deg)
+              translateX(181px) translateY(-17px) translateZ(20px);
+          }
+        }
         .main-title {
           font-size: 10px;
         }
@@ -553,17 +587,6 @@
 
         .footer {
           font-size: 10px;
-        }
-        @keyframes floatTitle {
-          0%,
-          100% {
-            transform: rotateX(36deg) rotateY(42deg) rotateZ(3deg)
-              translateX(181px) translateY(-17px) translateZ(0px);
-          }
-          50% {
-            transform: rotateX(36deg) rotateY(42deg) rotateZ(3deg)
-              translateX(181px) translateY(-17px) translateZ(20px);
-          }
         }
       }
     </style>
